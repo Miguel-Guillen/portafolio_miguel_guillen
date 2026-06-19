@@ -3,14 +3,15 @@
 .grid-section {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr, 2fr
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px 60px
 }
 .img-fluid {
     height: 100% !important;
     max-height: 300px !important;
 }
 
-p, a {
+p, a, span {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
