@@ -1,133 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Angel Guillen — Data Analyst Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container-fluid bg-light">
-        <div class="row">
-            <div class="col-xl-10 col-12 mx-xl-auto">
-                <div class="info-section">
-                    <div class="text-center">
-                        <img class="img-fluid rounded-circle" src="assets/foto.jpg" alt="">
-                    </div>
-                    <h2 class="text-center mt-4">Miguel Angel Guillen Valdez</h3>
-                    <h5 class="text-center text-muted mt-4">Analista de Datos | Desarrollador de Software</p>
-                    <p class="mt-4 mb-3"><i class="fas fa-mobile-alt me-2"></i> <strong>Celular</strong>: (+52) 449-547-52-36</p>
-                    <p class="my-2"><i class="fas fa-map-marker-alt me-2"></i> <strong>Ubicacion</strong>: Mexico, Ags</p>
-                </div>
-                
-                <div class="info-section text-center">
-                    <p class="my-1">Análisis de datos con formacion en entornos industriales y ventas. Competente en el manejo de datos, creación de dashboard/reportes y desarrollo de KPI's</p>
-                    <p class="my-1">Cuento con experiencia en herramientas como Excel a nivel intermedio-avanzado, SQL Python, Power BI. 3 Años de experiencia en tecnologias Angular, .NET, control de versiones con Git/Gitea</p>
-                    <p>Experiencia en el servicio al cliente y la resolución de problemas informaticos con soluciones tecnológicas en entornos productivos dando visibilidad a problemas desconocidos y mejorando problemas de calidad</p>
-                </div>
-            </div>
-    
-            <div class="col-xl-10 col-12 mx-xl-auto">
-                <h2 class="text-center text-header">Proyectos</h2>
-                <div class="info-section grid-section">
+  <nav class="nav">
+    <ul class="nav__links">
+      <li><a href="#about">Sobre Mí</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#journey">Trayectoria</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
 
-                    <div class="card p-4">
-                        <p class="text-center" style="font-weight: 600; font-size: 17px;">Resumen ejecutivo de ventas wallmart - 2012</p>
-                        <img class="img-thumbnail mt-4" src="assets/resumen_ejecutivo_wallmart.png" alt="">
-                        
-                        <p class="mt-4">El objetivo era conocer las ventas por m² por departamento y su participacion en el periodo del año 2012, para ello se realizo un analisís y se creo un dashboard interactivo</p>
-                        <p class="mt-3">
-                            <strong>Herramientas:</strong>
-                            <span>Excel, Tablas dinamicas, Graficas, Formulas</span>
-                        </p>
-                        <p>
-                            <strong>Tipo</strong>
-                            <span>Documento CSV/XLSX</span>
-                        </p>
-                        <a class="ms-1" href="https://docs.google.com/spreadsheets/d/1tDBFBcM3X82niQkamiTXH8vB_I-3lOgLEMszkkhNdN4/edit?usp=sharing">Abrir proyecto</a>
-                    </div>
-
-                      <div class="card p-4">
-                        <p class="text-center" style="font-weight: 600; font-size: 17px;">Análisis de desempeño y toma de decisiones de negocio — Proyecto RappiPlus</p>
-                        <img class="img-thumbnail mt-4" src="assets/proyecto_rappiplus.png" alt="">
-                        
-                        <p class="mt-4">Analicé múltiples conjuntos de datos del servicio RappiPlus con el objetivo de evaluar su desempeño y apoyar decisiones de negocio basadas en datos.
-                            El análisis abarca desde la rentabilidad del negocio hasta el comportamiento del usuario dentro de la plataforma, pasando por retención y validación estadística de experimentos.</p>
-                        <p class="mt-3">
-                            <strong>Herramientas:</strong>
-                            <span>Python (pandas, numpy, scipy, statsmodels), SQL (PostgreSQL), Jupyter Notebook</span>
-                        </p>
-                        <p>
-                            <strong>Tipo</strong>
-                            <span>Jupyter Notebook/Power Bi</span>
-                        </p>
-                        <a class="ms-1" href="https://github.com/Miguel-Guillen/da_rappiplus_final_project">Abrir proyecto</a>
-                    </div>
-
-                      <div class="card p-4">
-                        <p class="text-center" style="font-weight: 600; font-size: 17px;">Análisis de ventas y rentabilidad — Proyecto Northwind</p>
-                        <img class="img-thumbnail mt-4" src="assets/jupyter.png" alt="">
-                        
-                        <p class="mt-4">Analicé cuatro datasets de la base de datos ficticia Northwind. El objetivo fue limpiar los datos y calcular KPIs clave de ventas para entender el comportamiento de ingresos, el impacto de los descuentos y el desempeño por producto.</p>
-                        <p class="mt-3">
-                            <strong>Herramientas:</strong>
-                            <span>Python (pandas, numpy), SQL Server, Jupyter Notebook</span>
-                        </p>
-                        <p>
-                            <strong>Tipo</strong>
-                            <span>Jupyter Notebook</span>
-                        </p>
-                        <a class="ms-1" href="https://github.com/Miguel-Guillen/da_nortwind_jupyter_project">Abrir proyecto</a>
-                    </div>
-
-                      <div class="card p-4">
-                        <p class="text-center" style="font-weight: 600; font-size: 17px;">Análisis de rentabilidad editorial — Proyecto Pubs</p>
-                        <img class="img-thumbnail mt-4" src="assets/dashboard_pubs.png" alt="">
-                        
-                        <p class="mt-4">Analicé tres datasets de una editorial ficticia (Pubs) con el objetivo de evaluar la rentabilidad del catálogo de títulos y el desempeño de ventas por tienda. El análisis sirvió como base para la construcción de un dashboard en Power BI.</p>
-                        <p class="mt-3">
-                            <strong>Herramientas:</strong>
-                            <span>Python (pandas, numpy), SQL Server, Jupyter Notebook, Power BI</span>
-                        </p>
-                        <p>
-                            <strong>Tipo</strong>
-                            <span>Jupyter Notebook/Power BI</span>
-                        </p>
-                        <a class="ms-1" href="https://github.com/Miguel-Guillen/da_pubs_project">Abrir proyecto</a>
-                    </div>
-
-                    <div class="card p-4">
-                        <p class="text-center" style="font-weight: 600; font-size: 17px;">Landing page Northwind</p>
-                        <img class="img-thumbnail mt-3" src="assets/nortwind_landing.png" alt="">
-                        
-                        <p class="mt-4">El proposito era manipular los datos de la base de datos ficticia Northwind y usar los datos previamente seleccionados para la creacion de una landing page con un estilo oscuro tipo night</p>
-                        <p class="mt-3">
-                            <strong>Herramientas:</strong>
-                            <span>Html, CSS, SQL Server, Bootstrap</span>
-                        </p>
-                        <p>
-                            <strong>Tipo</strong>
-                            <span>Pagina web</span>
-                        </p>
-                        <a class="ms-1" href="https://miguel-guillen.github.io/landing_northwind/">Abrir proyecto</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="bg-white text-center border shadow pt-4 pb-5">
-                    <h2 class="text-header">Contacto</h2>
-                    <p class="mt-4"><i class="far fa-envelope me-2"></i> <strong>Correo</strong>: mickey.guillen@gmail.com</p>
-                    <p class="my-2"><i class="fas fa-mobile-alt me-2"></i> <strong>Celular</strong>: (+52) 449-547-52-36</p>
-                    <a href="https://www.linkedin.com/in/miguel-guillen-valdez/"><i class="fab fa-linkedin me-2"></i>Linkedin</a>
-                </div>
-            </div>
+  <section class="hero" id="top">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Data Analyst · SQL · Power BI · Python</p>
+      <h1 class="hero__name">Miguel Angel<br/>Guillen Valdez</h1>
+      <p class="hero__subtitle">Transformando datos industriales en decisiones estratégicas mediante dashboards, KPIs y análisis accionables.</p>
+      <blockquote class="hero__quote">"Convierto datos complejos en resultados visuales claros y rapidos de entender"</blockquote>
+      <div class="hero__ctas">
+        <a href="#projects" class="btn btn--primary">Ver Proyectos</a>
+        <a href="#contact" class="btn btn--ghost">Contactar</a>
+      </div>
+    </div>
+    <div class="hero__card-wrap" style="flex-direction: column; align-items: center;">
+        <img class="hero-img" src="assets/foto.jpg">
+        <div class="hero__stats">
+            <div class="stat"><span class="stat__val">Python</span><span class="stat__lbl">Pandas / NumPy</span></div>
+            <div class="stat"><span class="stat__val">Power BI</span><span class="stat__lbl">Dashboards</span></div>
+            <div class="stat"><span class="stat__val">SQL</span><span class="stat__lbl">SQL Server</span></div>
         </div>
     </div>
+    <a href="#about" class="hero__scroll">Desliza para explorar ↓</a>
+  </section>
+
+  <section class="section" id="about">
+    <p class="section__eyebrow">01 / Profile</p>
+    <h2 class="section__title">Sobre Mí</h2>
+    <div class="about__grid">
+      <div class="about__bio">
+        <p class="text-white">Ingeniero de desarrollo de software con especializacion en entornos industriales y maquinaria. Formacion en el analisis de datos, creación de dashboards/reportes y desarrollo de KPIs.</p>
+        <p class="mt-3">Esta combinacion me permite entender los desafios de la fabrica, traducirlos y usarlos para la creacion de tableros, preguntas analiticas o herramientas/apps de valor para que los datos trabajan para la empresa</p>
+        <div class="about__mission">
+          <p class="about__mission-label text-warning">Mi Misión</p>
+          <p class="text-light">"Dar visibilidad a datos que nadie estaba viendo — y convertirlos en decisiones que mejoran procesos, calidad y mejora continua"</p>
+        </div>
+      </div>
+      <div class="about__skills-wrap">
+        <div class="skill-group">
+          <p class="skill-group__label">Hard Skills</p>
+          <div class="tags">
+            <span>SQL</span><span>Power BI</span><span>Python</span><span>Excel Avanzado</span>
+            <span>Pandas</span><span>NumPy</span><span>Dashboards</span><span>KPIs</span>
+            <span>Data Cleaning</span><span>Tablas Dinámicas</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group__label">Soft Skills</p>
+          <div class="tags tags--soft">
+            <span>Resolución de Problemas</span><span>Orientación al Detalle</span>
+            <span>Comunicación Técnica</span><span>Liderazgo</span>
+            <span>Mejora Continua</span><span>Atención al Cliente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <p class="section__eyebrow">02 / Impact</p>
+    <h2 class="section__title">Impacto en Números</h2>
+    <div class="impact__grid">
+      <div class="impact__item">
+        <span class="impact__num">5+</span>
+        <span class="impact__lbl">Proyectos Analíticos</span>
+      </div>
+      <div class="impact__item">
+        <span class="impact__num">20+</span>
+        <span class="impact__lbl">Dashboard desarrollados</span>
+      </div>
+      <div class="impact__item">
+        <span class="impact__num">100+</span>
+        <span class="impact__lbl">Consultas SQL Realizadas</span>
+      </div>
+      <div class="impact__item">
+        <span class="impact__num">1000+</span>
+        <span class="impact__lbl">Horas de analisis de datos</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <p class="section__eyebrow">03 / Process</p>
+    <h2 class="section__title">Mi Enfoque de Trabajo</h2>
+    <p class="section__sub">Un proceso estructurado para convertir datos en valor.</p>
+    <div class="process__steps">
+      <div class="process__step"><span class="process__num text-warning">01</span><p>Entender el problema de negocio y sus métricas clave.</p></div>
+      <div class="process__step"><span class="process__num text-warning">02</span><p>Explorar, limpiar y preparar los datos.</p></div>
+      <div class="process__step"><span class="process__num text-warning">03</span><p>Analizar patrones, tendencias y anomalías.</p></div>
+      <div class="process__step"><span class="process__num text-warning">04</span><p>Visualizar insights en dashboards accionables.</p></div>
+      <div class="process__step"><span class="process__num text-warning">05</span><p>Comunicar hallazgos y proponer recomendaciones.</p></div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="projects">
+    <p class="section__eyebrow">04 / Case Studies</p>
+    <h2 class="section__title">Proyectos Destacados</h2>
+    <p class="section__sub">Cada proyecto representa un problema real resuelto mediante análisis de datos, visualización y recomendaciones accionables.</p>
+
+    <div class="projects__grid">
+
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="assets/resumen_ejecutivo_wallmart.png" alt="Resumen ejecutivo Walmart" />
+          <span class="project-card__badge">Excel · Business Analytics</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Resumen Ejecutivo de Ventas Walmart 2012</h3>
+          <div class="project-card__section"><span>📌</span><div><strong>Problema de Negocio</strong><p>Falta de visibilidad sobre el desempeño de ventas por m² en cada departamento durante el ejercicio 2012.</p></div></div>
+          <div class="project-card__section"><span>🎯</span><div><strong>Objetivo</strong><p>Conocer la participación de ventas por departamento y construir un dashboard interactivo para la toma de decisiones.</p></div></div>
+          <div class="project-card__section"><span>📊</span><div><strong>Hallazgos Clave</strong><p>Identificación de departamentos con mayor y menor rendimiento por metro cuadrado a lo largo del año.</p></div></div>
+          <div class="project-card__section"><span>💡</span><div><strong>Valor de Negocio</strong><p>Permite priorizar inversión de espacio por departamento y optimizar el layout comercial.</p></div></div>
+          <div class="project-card__tags">
+            <span>Excel</span><span>Tablas Dinámicas</span><span>Gráficas</span><span>Fórmulas</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://docs.google.com/spreadsheets/d/1tDBFBcM3X82niQkamiTXH8vB_I-3lOgLEMszkkhNdN4/edit?usp=sharing" target="_blank" class="btn btn--sm btn--primary">Ver Proyecto</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="assets/proyecto_rappiplus.png" alt="Proyecto RappiPlus" />
+          <span class="project-card__badge">Python · SQL · Power BI</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Análisis de Desempeño — Proyecto RappiPlus</h3>
+          <div class="project-card__section"><span>📌</span><div><strong>Problema de Negocio</strong><p>Necesidad de evaluar la rentabilidad del servicio RappiPlus y entender el comportamiento de sus usuarios para apoyar decisiones estratégicas.</p></div></div>
+          <div class="project-card__section"><span>🔍</span><div><strong>Análisis Realizado</strong><p>Análisis de rentabilidad, retención de usuarios y validación estadística de experimentos usando múltiples datasets.</p></div></div>
+          <div class="project-card__section"><span>📊</span><div><strong>Hallazgos Clave</strong><p>Variables críticas de comportamiento del usuario identificadas; experimentos validados estadísticamente para apoyar decisiones de producto.</p></div></div>
+          <div class="project-card__section"><span>📈</span><div><strong>Valor de Negocio</strong><p>Mejora la rentabilidad del servicio y optimiza la experiencia del usuario basado en evidencia.</p></div></div>
+          <div class="project-card__tags">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>SciPy</span><span>SQL</span><span>Power BI</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Miguel-Guillen/da_rappiplus_final_project" target="_blank" class="btn btn--sm btn--primary">Ver Proyecto</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="assets/jupyter.png" alt="Proyecto Northwind" />
+          <span class="project-card__badge">Python · SQL · EDA</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Análisis de Ventas y Rentabilidad — Northwind</h3>
+          <div class="project-card__section"><span>📌</span><div><strong>Problema de Negocio</strong><p>Necesidad de calcular KPIs clave de ventas, entender el impacto de los descuentos y evaluar el desempeño por producto.</p></div></div>
+          <div class="project-card__section"><span>🔍</span><div><strong>Análisis Realizado</strong><p>Limpieza de cuatro datasets, cálculo de KPIs de ingresos y análisis del comportamiento de descuentos por categoría.</p></div></div>
+          <div class="project-card__section"><span>📊</span><div><strong>Hallazgos Clave</strong><p>Productos con mayor y menor rentabilidad identificados; impacto de descuentos cuantificado por categoría.</p></div></div>
+          <div class="project-card__section"><span>📈</span><div><strong>Valor de Negocio</strong><p>Permite optimizar la política de descuentos y priorizar el portafolio de productos más rentable.</p></div></div>
+          <div class="project-card__tags">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL Server</span><span>Jupyter</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Miguel-Guillen/da_nortwind_jupyter_project" target="_blank" class="btn btn--sm btn--primary">Ver Proyecto</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="assets/dashboard_pubs.png" alt="Proyecto Pubs" />
+          <span class="project-card__badge">Power BI · Python · SQL</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Análisis de Rentabilidad Editorial — Proyecto Pubs</h3>
+          <div class="project-card__section"><span>📌</span><div><strong>Problema de Negocio</strong><p>Evaluar la rentabilidad del catálogo de una editorial y el desempeño de ventas por tienda para mejorar la toma de decisiones.</p></div></div>
+          <div class="project-card__section"><span>🔍</span><div><strong>Análisis Realizado</strong><p>Análisis de tres datasets con Python, construcción de KPIs y elaboración de dashboard en Power BI.</p></div></div>
+          <div class="project-card__section"><span>📊</span><div><strong>Hallazgos Clave</strong><p>Títulos más rentables identificados; tiendas con mejor y peor desempeño segmentadas por métricas de venta.</p></div></div>
+          <div class="project-card__section"><span>📈</span><div><strong>Valor de Negocio</strong><p>Dashboard accionable que permite al equipo de negocio monitorear rentabilidad en tiempo real.</p></div></div>
+          <div class="project-card__tags">
+            <span>Python</span><span>Pandas</span><span>SQL Server</span><span>Jupyter</span><span>Power BI</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Miguel-Guillen/da_pubs_project" target="_blank" class="btn btn--sm btn--primary">Ver Proyecto</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="assets/nortwind_landing.png" alt="Landing Northwind" />
+          <span class="project-card__badge">HTML · CSS · SQL</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Landing Page Northwind</h3>
+          <div class="project-card__section"><span>📌</span><div><strong>Problema de Negocio</strong><p>Presentar los datos de la base de datos Northwind de forma visual y atractiva mediante una landing page estilo night.</p></div></div>
+          <div class="project-card__section"><span>🔍</span><div><strong>Trabajo Realizado</strong><p>Extracción y selección de datos con SQL Server, maquetación de landing page con diseño dark mode usando HTML, CSS y Bootstrap.</p></div></div>
+          <div class="project-card__section"><span>💡</span><div><strong>¿Por qué es relevante?</strong><p>Demuestra la capacidad de conectar análisis de datos con presentación visual orientada al usuario final.</p></div></div>
+          <div class="project-card__tags">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>SQL Server</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://miguel-guillen.github.io/landing_northwind/" target="_blank" class="btn btn--sm btn--primary">Ver Proyecto</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <p class="section__eyebrow">05 / Stack</p>
+    <h2 class="section__title">Stack Tecnológico</h2>
+    <p class="section__sub">Herramientas y técnicas que utilizo para transformar datos en decisiones.</p>
+    <div class="stack__grid">
+      <div class="stack__group">
+        <h4>Análisis de Datos</h4>
+        <div class="tags">
+          <span>Python</span><span>Pandas</span><span>NumPy</span><span>Data Cleaning</span><span>Análisis de Cohortes</span>
+        </div>
+      </div>
+      <div class="stack__group">
+        <h4>SQL & Bases de Datos</h4>
+        <div class="tags">
+          <span>SQL</span><span>PostgreSQL</span><span>SQL Server</span><span>JOINs & CTEs</span><span>Store procedure</span><span>Mongo</span><span>MySQL</span>
+        </div>
+      </div>
+      <div class="stack__group">
+        <h4>Visualización</h4>
+        <div class="tags">
+          <span>Power BI</span><span>Excel Avanzado</span><span>Tablas Dinámicas</span><span>Dashboards</span><span>KPI Design</span><span>Apps/Web page</span>
+        </div>
+      </div>
+      <div class="stack__group">
+        <h4>Estadística</h4>
+        <div class="tags">
+          <span>SciPy</span><span>Statsmodels</span><span>Pruebas de Hipótesis</span><span>Intervalos de Confianza</span><span>A/B Testing</span>
+        </div>
+      </div>
+      <div class="stack__group">
+        <h4>Desarrollo &amp; DevOps</h4>
+        <div class="tags">
+          <span>Angular</span><span>.NET</span><span>Git</span><span>Gitea</span><span>Javascript</span><span>Node</span><span>CSS</span><span>Bootstrap</span>
+        </div>
+      </div>
+      <div class="stack__group">
+        <h4>Herramientas</h4>
+        <div class="tags">
+          <span>Jupyter Notebook</span><span>VS Code</span><span>VS Studio Code</span><span>Excel</span><span>Git</span><span>Postman</span><span>Sql Server</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="journey">
+    <p class="section__eyebrow">06 / Timeline</p>
+    <h2 class="section__title">Mi Trayectoria</h2>
+    <p class="text-secondary">Del desarrollo de software al análisis de datos: evolución continua y orientación a resultados.</p>
+    <div class="timeline">
+      <div class="timeline__item">
+        <span class="timeline__year">2019 – 2022</span>
+        <div class="timeline__content">
+          <h4>Universidad tecnologica de aguascalientes</h4>
+          <p>Ingenierio en desarrollo de software multiplataforma</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2023 – 2026</span>
+        <div class="timeline__content">
+          <h4>Desarrollador Angular / .NET / SQL / WPF</h4>
+          <p>3 años de experiencia en desarrollo de software con Angular y .NET. Control de versiones con Git/Gitea. Resolución de problemas tecnológicos en entornos productivos.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2025 – 2026</span>
+        <div class="timeline__content">
+          <h4>Transición a Análisis de Datos</h4>
+          <p>Especialización en SQL, Python, Power BI y Excel avanzado. Creación de dashboards, KPIs y análisis orientados a entornos industriales</p>
+        </div>
+      </div>
+      <div class="timeline__item timeline__item--highlight">
+        <span class="timeline__year">Próximo Objetivo</span>
+        <div class="timeline__content">
+          <h4>Data Analyst</h4>
+          <p>Aplicar análisis de datos para transformar información en decisiones estratégicas y generar impacto real en las organizaciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <p class="section__eyebrow">07 / Contact</p>
+    <h2 class="section__title">Conectemos</h2>
+    <p class="section__sub">¿Interesado en colaborar o explorar nuevas oportunidades? Estoy disponible para conectar.</p>
+    <div class="contact__links">
+      <a href="mailto:mickey.guillen@gmail.com" class="contact__item">
+        <div><strong class="text-warning">Email</strong>mickey.guillen@gmail.com</div>
+      </a>
+      <a href="https://www.linkedin.com/in/miguel-guillen-valdez/" target="_blank" class="contact__item">
+        <div><strong class="text-warning">LinkedIn</strong>/in/miguel-guillen-valdez</div>
+      </a>
+      <a href="https://github.com/Miguel-Guillen" target="_blank" class="contact__item">
+        <div><strong class="text-warning">GitHub</strong>/Miguel-Guillen</div>
+      </a>
+      <div class="contact__item contact__item--info">
+        <div><strong class="text-warning">Celular</strong>(+52) 449-547-52-36</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Miguel Angel Guillen Valdez © 2026 · "Transformando datos en decisiones."</p>
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/in/miguel-guillen-valdez/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Miguel-Guillen" target="_blank">GitHub</a>
+      <a href="mailto:mickey.guille2000n@gmail.com">Email</a>
+    </div>
+  </footer>
 
     <script src="https://kit.fontawesome.com/4b17d1726c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
